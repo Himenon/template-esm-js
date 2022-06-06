@@ -1,4 +1,4 @@
-# @Himenon/template-esm-js
+# @himenon/template-esm-js
 
 ## Usage
 
