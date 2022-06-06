@@ -45,7 +45,7 @@
   "scripts": {
     "build": "tsup src/*.ts",
     "clean": "pnpm ts ./scripts/clean.ts",
-    "format:code": "run-s prettier:format eslint:format",
+    "format": "run-s prettier:format eslint:format",
     "lerna:version:up": "lerna version --yes",
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "pnpm publish",

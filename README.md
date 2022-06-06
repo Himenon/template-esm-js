@@ -2,9 +2,9 @@
 
 ## Usage
 
-| scripts                   | description                                 |
-| :------------------------ | :------------------------------------------ |
-| `build`                   | typescript build and create proxy directory |
+| scripts | description                                 |
+| :------ | :------------------------------------------ |
+| `build` | typescript build and create proxy directory |
 
 ## Release
 
