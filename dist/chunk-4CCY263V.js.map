@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/sub.ts"],"sourcesContent":["export const thisIsSub = (): string => {\n  return \"this is sub file.\";\n};\n"],"mappings":";;;;;;;AAAA;AAAA;AAAA;AAAA;AAAO,IAAM,YAAY,MAAc;AACrC,SAAO;AACT;","names":[]}
