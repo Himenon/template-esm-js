@@ -1,6 +1,6 @@
-jest.dontMock("../index");
+import { describe, it, expect } from "vitest";
 
-import { hello } from "../index";
+import { hello } from "../index.js";
 
 describe("Hello Test", () => {
   it("name check", () => {

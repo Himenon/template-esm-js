@@ -1,5 +1,5 @@
-export * as Sub from "./sub";
-export * as Hello from "./hello/world";
+export * as Sub from "./sub.js";
+export * as Hello from "./hello/world.js";
 
 export const hello = (name: string): string => {
   const params = {
@@ -10,3 +10,5 @@ export const hello = (name: string): string => {
 };
 
 console.log(hello("Your name"));
+
+export default hello;

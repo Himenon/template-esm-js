@@ -1,19 +1,28 @@
 {
-  "name": "@himenon/template-js",
-  "version": "1.0.5",
-  "description": "node library template",
+  "name": "@himenon/template-esm-js",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ESModule Library Template",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "node": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "keywords": [
     "template",
-    "proxy directory",
     "typescript"
   ],
-  "homepage": "https://github.com/Himenon/template-js#readme",
+  "homepage": "https://github.com/Himenon/template-esm-js#readme",
   "bugs": {
-    "url": "https://github.com/Himenon/template-js/issues"
+    "url": "https://github.com/Himenon/template-esm-js/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Himenon/template-js.git"
+    "url": "git@github.com:Himenon/template-esm-js.git"
   },
   "license": "MIT",
   "author": {
@@ -22,66 +31,67 @@
     "url": "https://github.com/Himenon"
   },
   "sideEffects": false,
-  "main": "./lib/$cjs/index.js",
-  "module": "./lib/$esm/index.js",
-  "types": "./lib/$types/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "directories": {
-    "lib": "lib"
+    "dist": "dist"
   },
   "files": [
-    "lib",
+    "dist",
     "package.json",
     "README.md"
   ],
   "scripts": {
-    "build": "pnpm ts ./scripts/build.ts",
+    "build": "tsup src/*.ts",
     "clean": "pnpm ts ./scripts/clean.ts",
-    "format:code": "run-s prettier:format eslint:format",
+    "format": "run-s prettier:format eslint:format",
     "lerna:version:up": "lerna version --yes",
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "pnpm publish",
-    "test": "run-p jest depcruise:validate eslint:validate prettier:validate",
+    "test": "run-p test:vitest eslint:validate prettier:validate",
     "prettier:format": "prettier \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md,html}\" --write ./src",
     "prettier:validate": "prettier --check \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md,html}\"",
     "eslint:format": "eslint \"**/*.{ts,tsx}\" --fix",
     "eslint:validate": "eslint \"**/*.{ts,tsx}\"",
-    "depcruise:validate": "depcruise --validate .dependency-cruiser.js src",
-    "jest": "jest -c ./jest.config.js",
-    "ts": "ts-node -P tsconfig.build.json"
+    "test:vitest": "vitest"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
+  "lint-staged": {
+    "*.{js,jsx,json,yml,yaml,html,md}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
-    "@types/jest": "27.5.1",
-    "@types/node": "17.0.38",
-    "@types/rimraf": "3.0.2",
+    "@swc/core": "^1.2.197",
+    "@types/node": "17.0.40",
     "@typescript-eslint/eslint-plugin": "5.27.0",
     "@typescript-eslint/parser": "5.27.0",
-    "cherry-pick": "^0.5.0",
     "conventional-changelog-angular-all": "1.7.0",
-    "cpy": "8.1.2",
-    "cz-conventional-changelog": "^3.3.0",
-    "dependency-cruiser": "11.8.0",
-    "eslint": "8.16.0",
+    "cross-env": "^7.0.3",
+    "eslint": "8.17.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
-    "execa": "5.1.1",
-    "generate-changelog": "1.8.0",
-    "jest": "28.1.0",
-    "jest-cli": "28.1.0",
     "lerna": "5.0.0",
-    "lint-staged": "12.5.0",
+    "lint-staged": "13.0.0",
     "npm-run-all": "4.1.5",
     "prettier": "2.6.2",
-    "rimraf": "3.0.2",
     "simple-git-hooks": "^2.8.0",
     "sort-package-json": "1.57.0",
-    "ts-jest": "28.0.3",
-    "ts-node": "10.8.0",
-    "typescript": "4.7.2"
+    "tsup": "^6.1.0",
+    "typescript": "4.7.3",
+    "vitest": "^0.14.0"
   },
   "engines": {
     "pnpm": ">=7"
