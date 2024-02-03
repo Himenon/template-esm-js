@@ -16,5 +16,9 @@
     "rootDir": ".",
     "outDir": "lib",
     "strict": true
-  }
+  },
+  "ts-node": {
+    "esm": true,
+    "swc": true,
+  },
 }
