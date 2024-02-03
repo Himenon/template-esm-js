@@ -44,7 +44,7 @@
   ],
   "scripts": {
     "build": "tsup src/*.ts",
-    "clean": "pnpm ts ./scripts/clean.ts",
+    "clean": "rimraf dist",
     "lerna:version:up": "lerna version --yes",
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "pnpm publish",
@@ -77,6 +77,7 @@
     "lerna": "8.0.2",
     "lint-staged": "15.2.1",
     "npm-run-all": "4.1.5",
+    "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.9.0",
     "sort-package-json": "2.7.0",
     "ts-node": "^10.9.2",
