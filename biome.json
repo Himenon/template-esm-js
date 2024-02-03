@@ -15,6 +15,7 @@
     }
   },
   "files": {
-    "ignoreUnknown": true
+    "ignoreUnknown": true,
+    "ignore": ["dist"]
   }
 }
