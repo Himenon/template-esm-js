@@ -59,12 +59,8 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md}": [
-      "prettier --write"
-    ],
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
+      "biome format --write"
     ],
     "package.json": [
       "sort-package-json"
@@ -89,7 +85,8 @@
     "vitest": "^1.2.2"
   },
   "engines": {
-    "pnpm": ">=7"
+    "pnpm": ">=8",
+    "node": ">=20"
   },
   "publishConfig": {
     "access": "public"
