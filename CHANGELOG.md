@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/Himenon/template-esm-js/compare/@himenon/template-esm-js@1.1.2...@himenon/template-esm-js@1.1.3) (2024-02-03)
+
+
+### Bug Fixes
+
+* sort-package-json ([#5](https://github.com/Himenon/template-esm-js/issues/5)) ([7e75a8d](https://github.com/Himenon/template-esm-js/commit/7e75a8d))
+* sort-package-json ([#8](https://github.com/Himenon/template-esm-js/issues/8)) ([12cf81c](https://github.com/Himenon/template-esm-js/commit/12cf81c))
+* version up settings ([#7](https://github.com/Himenon/template-esm-js/issues/7)) ([709623f](https://github.com/Himenon/template-esm-js/commit/709623f))
+
+
+### Chores
+
+* **deps:** update dependencies ([#4](https://github.com/Himenon/template-esm-js/issues/4)) ([49065d2](https://github.com/Himenon/template-esm-js/commit/49065d2))
+* remove sort-package-json ([#6](https://github.com/Himenon/template-esm-js/issues/6)) ([9e6729c](https://github.com/Himenon/template-esm-js/commit/9e6729c))
+
+
+
+
+
 <a name="1.1.2"></a>
 ## 1.1.2 (2022-06-21)
 
