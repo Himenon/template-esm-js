@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.5"></a>
+## 1.1.5 (2024-02-04)
+
+
+### Chores
+
+* update ([#10](https://github.com/Himenon/template-esm-js/issues/10)) ([291ee86](https://github.com/Himenon/template-esm-js/commit/291ee86))
+
+
+
+
+
 <a name="1.1.4"></a>
 ## 1.1.4 (2024-02-03)
 
