@@ -7,6 +7,11 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
 
+    # @see https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#concurrency
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+
     strategy:
       matrix:
         node-version: [22.x]
