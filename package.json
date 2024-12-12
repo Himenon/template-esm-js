@@ -2,7 +2,10 @@
   "name": "@himenon/template-esm-js",
   "version": "1.1.6",
   "description": "ESModule Library Template",
-  "keywords": ["template", "typescript"],
+  "keywords": [
+    "template",
+    "typescript"
+  ],
   "homepage": "https://github.com/Himenon/template-esm-js#readme",
   "bugs": {
     "url": "https://github.com/Himenon/template-esm-js/issues"
@@ -34,7 +37,11 @@
   "directories": {
     "dist": "dist"
   },
-  "files": ["dist", "package.json", "README.md"],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src/*.ts",
     "clean": "rimraf dist",
@@ -52,11 +59,13 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": ["biome format --no-errors-on-unmatched --write"]
+    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
+      "biome format --no-errors-on-unmatched --write"
+    ]
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.6.3",
-    "@swc/core": "^1.4.11",
+    "@biomejs/biome": "^1.9.4",
+    "@swc/core": "^1.10.1",
     "@types/node": "20.12.2",
     "@typescript-eslint/eslint-plugin": "7.4.0",
     "@typescript-eslint/parser": "7.4.0",
@@ -65,12 +74,12 @@
     "lerna": "8.1.2",
     "lint-staged": "15.2.2",
     "npm-run-all": "4.1.5",
-    "rimraf": "^5.0.5",
+    "rimraf": "^5.0.10",
     "simple-git-hooks": "^2.11.1",
     "ts-node": "^10.9.2",
-    "tsup": "^8.0.2",
+    "tsup": "^8.3.5",
     "typescript": "5.4.3",
-    "vitest": "^1.4.0"
+    "vitest": "^1.6.0"
   },
   "engines": {
     "node": ">=20",
