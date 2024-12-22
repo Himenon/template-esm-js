@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.9"></a>
+## 1.1.9 (2024-12-22)
+
+
+### Bug Fixes
+
+* github publish ([#14](https://github.com/Himenon/template-esm-js/issues/14)) ([3467157](https://github.com/Himenon/template-esm-js/commit/3467157))
+
+
+
+
+
 <a name="1.1.8"></a>
 ## 1.1.8 (2024-12-22)
 
