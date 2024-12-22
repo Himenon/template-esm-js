@@ -44,7 +44,7 @@ jobs:
       - run: pnpm install
       - run: |
           pnpm build
-          pnpm run release:github:registry
+          NPM_CONFIG_PROVENANCE=true pnpm run release:github:registry
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -64,6 +64,6 @@ jobs:
           cache: "pnpm"
       - run: pnpm install
       - run: pnpm build
-      - run: pnpm run release:npm:registry
+      - run: NPM_CONFIG_PROVENANCE=true pnpm run release:npm:registry
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
