@@ -2,10 +2,7 @@
   "name": "@himenon/template-esm-js",
   "version": "1.1.10",
   "description": "ESModule Library Template",
-  "keywords": [
-    "template",
-    "typescript"
-  ],
+  "keywords": ["template", "typescript"],
   "homepage": "https://github.com/Himenon/template-esm-js#readme",
   "bugs": {
     "url": "https://github.com/Himenon/template-esm-js/issues"
@@ -37,11 +34,7 @@
   "directories": {
     "dist": "dist"
   },
-  "files": [
-    "dist",
-    "package.json",
-    "README.md"
-  ],
+  "files": ["dist", "package.json", "README.md"],
   "scripts": {
     "build": "tsup src/*.ts",
     "clean": "rimraf dist",
@@ -51,7 +44,7 @@
     "test": "run-p test:vitest lint",
     "lint": "biome lint .",
     "format": "biome format --write .",
-    "validate": "biome check --apply .",
+    "validate": "biome check --write .",
     "test:vitest": "vitest",
     "ts": "node --no-warnings=ExperimentalWarning --experimental-specifier-resolution=node --loader ts-node/esm"
   },
@@ -59,10 +52,9 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
-      "biome format --no-errors-on-unmatched --write"
-    ]
+    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": ["biome format --no-errors-on-unmatched --write"]
   },
+  "packageManager": "pnpm@10.7.0",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@swc/core": "^1.10.1",
@@ -82,8 +74,8 @@
     "vitest": "^1.6.0"
   },
   "engines": {
-    "node": ">=20",
-    "pnpm": ">=8"
+    "node": ">=22",
+    "pnpm": ">=10"
   },
   "publishConfig": {
     "access": "public"
