@@ -1,4 +1,4 @@
-name: Release Workflow
+name: Release
 
 on:
   release:
@@ -6,6 +6,8 @@ on:
 
 jobs:
   build:
+    name: Build
+    timeout-minutes: 2
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,7 +19,7 @@ jobs:
           version: 9.10.0
       - uses: actions/setup-node@v4
         with:
-          node-version: "22.x"
+          node-version-file: ".node-version"
           registry-url: https://npm.pkg.github.com
           scope: "@Himenon"
           cache: "pnpm"
@@ -26,6 +28,8 @@ jobs:
           pnpm build
 
   release-github-registry:
+    name: Release GitHub Registry
+    timeout-minutes: 2
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -33,11 +37,9 @@ jobs:
           ref: main
       - uses: ./.github/actions/initialize
       - uses: pnpm/action-setup@v4
-        with:
-          version: 9.10.0
       - uses: actions/setup-node@v4
         with:
-          node-version: "22.x"
+          node-version-file: ".node-version"
           registry-url: https://npm.pkg.github.com
           scope: "@Himenon"
           cache: "pnpm"
@@ -49,6 +51,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release-npm-registry:
+    name: Release NPM Registry
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -57,11 +60,9 @@ jobs:
         with:
           ref: main
       - uses: pnpm/action-setup@v4
-        with:
-          version: 9.10.0
       - uses: actions/setup-node@v4
         with:
-          node-version: "22.x"
+          node-version-file: ".node-version"
           registry-url: "https://registry.npmjs.org"
           cache: "pnpm"
       - run: pnpm install
