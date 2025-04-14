@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.11"></a>
+## 1.1.11 (2025-04-14)
+
+
+### Continuous Integrations
+
+* update github action version ([#18](https://github.com/Himenon/template-esm-js/issues/18)) ([2e47d51](https://github.com/Himenon/template-esm-js/commit/2e47d51))
+
+
+
+
+
 <a name="1.1.10"></a>
 ## 1.1.10 (2024-12-22)
 
