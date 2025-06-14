@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## 1.2.1 (2025-06-14)
+
+
+### Bug Fixes
+
+* bin path ([#22](https://github.com/Himenon/template-esm-js/issues/22)) ([dd980e4](https://github.com/Himenon/template-esm-js/commit/dd980e4))
+
+
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2025-06-14)
 
