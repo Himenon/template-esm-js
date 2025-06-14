@@ -2,10 +2,7 @@
   "name": "@himenon/template-esm-js",
   "version": "1.2.2",
   "description": "ESModule Library Template",
-  "keywords": [
-    "template",
-    "typescript"
-  ],
+  "keywords": ["template", "typescript"],
   "bin": {
     "himenon-template-esm-js": "./dist/cli.cjs"
   },
@@ -38,13 +35,9 @@
   "directories": {
     "dist": "dist"
   },
-  "files": [
-    "src",
-    "dist",
-    "package.json",
-    "README.md"
-  ],
+  "files": ["src", "dist", "package.json", "README.md"],
   "scripts": {
+    "cli": "tsx ./src/cli.ts",
     "build": "pnpm run clean && rollup -c",
     "clean": "rimraf dist",
     "lerna:version:up": "lerna version --yes",
@@ -60,9 +53,7 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
-      "biome format --no-errors-on-unmatched --write"
-    ]
+    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": ["biome format --no-errors-on-unmatched --write"]
   },
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
@@ -84,6 +75,7 @@
     "rollup": "^4.43.0",
     "rollup-plugin-preserve-shebang": "^1.0.1",
     "simple-git-hooks": "^2.13.0",
+    "tsx": "^4.20.3",
     "typescript": "5.8.3",
     "vitest": "^3.2.3",
     "zod": "^3.25.64"
