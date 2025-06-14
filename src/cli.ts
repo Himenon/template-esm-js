@@ -10,7 +10,7 @@ const CliSchema = z.object({
 type CliSchema = z.infer<typeof CliSchema>;
 
 const main = async () => {
-  program.name("@himenon/template-cli").description("Template CLI Library").option("-v, --version", "Show Version");
+  program.name(`${process.env.CLI_NAME}`).description("Template CLI Library").option("-v, --version", `print ${process.env.CLI_NAME} version`);
   program.parse(process.argv);
   const options = program.opts<CliSchema>();
   const parsed = await CliSchema.parseAsync(options).catch((error) => {
@@ -29,7 +29,7 @@ const main = async () => {
   });
 
   if (parsed.version) {
-    console.log("Template CLI Version: 1.0.0");
+    console.log(`v${process.env.CLI_VERSION}`);
     return;
   }
 };
