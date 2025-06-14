@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: ${{ matrix.os }}
-    timeout-minutes: 2
+    timeout-minutes: 5
     runs-on: ${{ matrix.os }}
 
     # @see https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#concurrency
