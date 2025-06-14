@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.3"></a>
+## 1.2.3 (2025-06-14)
+
+
+### Chores
+
+* add tsx deps ([#24](https://github.com/Himenon/template-esm-js/issues/24)) ([0d47a2f](https://github.com/Himenon/template-esm-js/commit/0d47a2f))
+
+
+
+
+
 <a name="1.2.2"></a>
 ## 1.2.2 (2025-06-14)
 
