@@ -21,22 +21,19 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "node": "./dist/index.cjs",
-      "default": "./dist/index.js"
+      "import": "./src/index.js",
+      "default": "./src/index.js"
     },
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
   "directories": {
     "dist": "dist"
   },
-  "files": ["dist", "package.json", "README.md"],
+  "files": ["src", "dist", "package.json", "README.md"],
   "scripts": {
-    "build": "tsup src/*.ts",
     "clean": "rimraf dist",
     "lerna:version:up": "lerna version --yes",
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
@@ -65,7 +62,6 @@
     "npm-run-all": "4.1.5",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.13.0",
-    "tsup": "^8.5.0",
     "typescript": "5.8.3",
     "vitest": "^3.2.3"
   },
