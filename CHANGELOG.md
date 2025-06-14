@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.12"></a>
+## 1.1.12 (2025-06-14)
+
+
+### Chores
+
+* depentabotのsetupとdepsの更新 ([#19](https://github.com/Himenon/template-esm-js/issues/19)) ([6dd6c03](https://github.com/Himenon/template-esm-js/commit/6dd6c03))
+
+
+
+
+
 <a name="1.1.11"></a>
 ## 1.1.11 (2025-04-14)
 
