@@ -34,6 +34,7 @@
   },
   "files": ["src", "dist", "package.json", "README.md"],
   "scripts": {
+    "build": "pnpm run clean && rollup -c",
     "clean": "rimraf dist",
     "lerna:version:up": "lerna version --yes",
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
@@ -53,17 +54,24 @@
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@swc/core": "^1.12.1",
     "@types/node": "24.0.1",
+    "commander": "^14.0.0",
     "conventional-changelog-angular-all": "1.7.0",
     "cross-env": "^7.0.3",
     "lerna": "8.2.2",
     "lint-staged": "16.1.0",
     "npm-run-all": "4.1.5",
     "rimraf": "^6.0.1",
+    "rollup-plugin-preserve-shebang": "^1.0.1",
     "simple-git-hooks": "^2.13.0",
     "typescript": "5.8.3",
-    "vitest": "^3.2.3"
+    "vitest": "^3.2.3",
+    "zod": "^3.25.64"
   },
   "engines": {
     "node": ">=22",
