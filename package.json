@@ -1,8 +1,11 @@
 {
   "name": "@himenon/template-esm-js",
-  "version": "1.1.13",
+  "version": "1.2.0",
   "description": "ESModule Library Template",
-  "keywords": ["template", "typescript"],
+  "keywords": [
+    "template",
+    "typescript"
+  ],
   "bin": {
     "himenon-template-esm-js": "./src/cli.ts"
   },
@@ -35,7 +38,12 @@
   "directories": {
     "dist": "dist"
   },
-  "files": ["src", "dist", "package.json", "README.md"],
+  "files": [
+    "src",
+    "dist",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "build": "pnpm run clean && rollup -c",
     "clean": "rimraf dist",
@@ -52,7 +60,9 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": ["biome format --no-errors-on-unmatched --write"]
+    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
+      "biome format --no-errors-on-unmatched --write"
+    ]
   },
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# 1.2.0 (2025-06-14)
+
+
+### Features
+
+* add bin fields ([#21](https://github.com/Himenon/template-esm-js/issues/21)) ([abb8b80](https://github.com/Himenon/template-esm-js/commit/abb8b80))
+
+
+
+
+
 <a name="1.1.13"></a>
 ## 1.1.13 (2025-06-14)
 
