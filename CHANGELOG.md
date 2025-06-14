@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.13"></a>
+## 1.1.13 (2025-06-14)
+
+
+### Chores
+
+* **deps:** bump actions/checkout from 2 to 4 ([#20](https://github.com/Himenon/template-esm-js/issues/20)) ([1b4cf7b](https://github.com/Himenon/template-esm-js/commit/1b4cf7b))
+
+
+
+
+
 <a name="1.1.12"></a>
 ## 1.1.12 (2025-06-14)
 
