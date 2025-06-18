@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.4"></a>
+## 1.2.4 (2025-06-18)
+
+
+### Chores
+
+* use biome 2 ([#25](https://github.com/Himenon/template-esm-js/issues/25)) ([eca536d](https://github.com/Himenon/template-esm-js/commit/eca536d))
+
+
+
+
+
 <a name="1.2.3"></a>
 ## 1.2.3 (2025-06-14)
 
