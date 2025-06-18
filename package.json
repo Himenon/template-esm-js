@@ -2,7 +2,10 @@
   "name": "@himenon/template-esm-js",
   "version": "1.2.3",
   "description": "ESModule Library Template",
-  "keywords": ["template", "typescript"],
+  "keywords": [
+    "template",
+    "typescript"
+  ],
   "bin": {
     "himenon-template-esm-js": "./dist/cli.cjs"
   },
@@ -35,7 +38,12 @@
   "directories": {
     "dist": "dist"
   },
-  "files": ["src", "dist", "package.json", "README.md"],
+  "files": [
+    "src",
+    "dist",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "cli": "tsx ./src/cli.ts",
     "build": "pnpm run clean && rollup -c",
@@ -53,23 +61,25 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": ["biome format --no-errors-on-unmatched --write"]
+    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
+      "biome format --no-errors-on-unmatched --write"
+    ]
   },
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@rollup/plugin-commonjs": "^28.0.3",
+    "@biomejs/biome": "^2.0.0",
+    "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-replace": "^6.0.2",
-    "@rollup/plugin-typescript": "^12.1.2",
+    "@rollup/plugin-typescript": "^12.1.3",
     "@swc/core": "^1.12.1",
-    "@types/node": "24.0.1",
+    "@types/node": "24.0.3",
     "commander": "^14.0.0",
     "conventional-changelog-angular-all": "1.7.0",
     "cross-env": "^7.0.3",
     "lerna": "8.2.2",
-    "lint-staged": "16.1.0",
+    "lint-staged": "16.1.2",
     "npm-run-all": "4.1.5",
     "rimraf": "^6.0.1",
     "rollup": "^4.43.0",
@@ -77,8 +87,8 @@
     "simple-git-hooks": "^2.13.0",
     "tsx": "^4.20.3",
     "typescript": "5.8.3",
-    "vitest": "^3.2.3",
-    "zod": "^3.25.64"
+    "vitest": "^3.2.4",
+    "zod": "^3.25.67"
   },
   "engines": {
     "node": ">=22",
