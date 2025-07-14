@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.7"></a>
+## 1.2.7 (2025-07-14)
+
+
+### Chores
+
+* **deps-dev:** bump [@rollup](https://github.com/rollup)/plugin-typescript from 12.1.3 to 12.1.4 ([#29](https://github.com/Himenon/template-esm-js/issues/29)) ([f439d8e](https://github.com/Himenon/template-esm-js/commit/f439d8e))
+
+
+
+
+
 <a name="1.2.6"></a>
 ## 1.2.6 (2025-07-14)
 
