@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.8"></a>
+## 1.2.8 (2025-07-21)
+
+
+### Chores
+
+* **deps-dev:** bump lerna from 8.2.2 to 8.2.3 ([#26](https://github.com/Himenon/template-esm-js/issues/26)) ([32f13e4](https://github.com/Himenon/template-esm-js/commit/32f13e4))
+
+
+
+
+
 <a name="1.2.7"></a>
 ## 1.2.7 (2025-07-14)
 
