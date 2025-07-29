@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.10"></a>
+## 1.2.10 (2025-07-29)
+
+
+### Chores
+
+* **deps-dev:** bump zod from 4.0.5 to 4.0.10 ([#39](https://github.com/Himenon/template-esm-js/issues/39)) ([6333568](https://github.com/Himenon/template-esm-js/commit/6333568))
+
+
+
+
+
 <a name="1.2.9"></a>
 ## 1.2.9 (2025-07-28)
 
