@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.11"></a>
+## 1.2.11 (2025-08-19)
+
+
+### Chores
+
+* **deps-dev:** bump [@biomejs](https://github.com/biomejs)/biome from 2.1.2 to 2.2.0 ([#46](https://github.com/Himenon/template-esm-js/issues/46)) ([c535561](https://github.com/Himenon/template-esm-js/commit/c535561))
+
+
+
+
+
 <a name="1.2.10"></a>
 ## 1.2.10 (2025-07-29)
 
