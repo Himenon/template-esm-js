@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.12"></a>
+## 1.2.12 (2025-09-10)
+
+
+### Continuous Integrations
+
+* enable cooldown ([#55](https://github.com/Himenon/template-esm-js/issues/55)) ([166ed1c](https://github.com/Himenon/template-esm-js/commit/166ed1c))
+
+
+
+
+
 <a name="1.2.11"></a>
 ## 1.2.11 (2025-08-19)
 
