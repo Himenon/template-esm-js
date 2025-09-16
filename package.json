@@ -65,7 +65,7 @@
       "biome format --no-errors-on-unmatched --write"
     ]
   },
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.16.1",
   "devDependencies": {
     "@biomejs/biome": "^2.0.0",
     "@rollup/plugin-commonjs": "^28.0.6",
