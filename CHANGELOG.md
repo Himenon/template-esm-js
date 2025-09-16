@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.13"></a>
+## 1.2.13 (2025-09-16)
+
+
+### Chores
+
+* **pnpm:** set mimumReleaseAge ([#57](https://github.com/Himenon/template-esm-js/issues/57)) ([8ea0a74](https://github.com/Himenon/template-esm-js/commit/8ea0a74))
+
+
+
+
+
 <a name="1.2.12"></a>
 ## 1.2.12 (2025-09-10)
 
