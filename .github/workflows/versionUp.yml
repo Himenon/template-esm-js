@@ -16,7 +16,7 @@ jobs:
           ref: main
       - uses: ./.github/actions/initialize
       - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version-file: ".node-version"
           cache: "pnpm"
