@@ -86,7 +86,7 @@
     "rollup-plugin-preserve-shebang": "^1.0.1",
     "simple-git-hooks": "^2.13.0",
     "tsx": "^4.20.3",
-    "typescript": "5.8.3",
+    "typescript": "5.9.3",
     "vitest": "^3.2.4",
     "zod": "^4.0.5"
   },
