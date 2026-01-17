@@ -24,13 +24,13 @@ jobs:
       - uses: ./.github/actions/initialize
       - uses: pnpm/action-setup@v4
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: ".node-version"
           cache: "pnpm"
       - run: pnpm i --frozen-lockfile
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: ".node-version"
       - name: Test & Build
